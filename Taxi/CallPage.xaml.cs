@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 
 namespace Taxi
@@ -27,7 +27,8 @@ namespace Taxi
         }
         private async void callClick(object sender, EventArgs e)
         {
-            await DisplayAlert("Успех","Машина в пути","ОК");
+            //await DisplayAlert("Успех","Машина в пути","ОК");
+            await this.DisplayToastAsync("Машина в пути");
         }
 
     }
