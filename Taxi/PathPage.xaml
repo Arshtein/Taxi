@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taxi.PathPage">
+    <StackLayout>
+        <Label FontSize="20" Text="Из:"/>
+        <Entry x:Name="bS" FontSize="20" Placeholder="Улица" Keyboard="Text" TextChanged="bSC"/>
+        <Entry x:Name="bH" FontSize="20" Placeholder="Номер дома" Keyboard="Numeric" TextChanged="bHC"/>
+        <Label FontSize="20" Text="В:"/>
+        <Entry x:Name="eS" FontSize="20" Placeholder="Улица" Keyboard="Text" TextChanged="eSC"/>
+        <Entry x:Name="eH" FontSize="20" Placeholder="Номер дома" Keyboard="Numeric" TextChanged="eHC"/>
+        <Button x:Name="back" FontSize="20" Text="Отмена" Clicked="backClick"/>
+        <Button x:Name="OK" FontSize="20" Text="ОК" VerticalOptions="EndAndExpand" Clicked="OKClick" IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>

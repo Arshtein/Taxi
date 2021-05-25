@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Taxi"
+             x:Class="Taxi.MainPage">
+    <StackLayout>
+        <Entry x:Name="phone" FontSize="20" Placeholder="Номер телефона" Keyboard="Telephone" TextChanged="pC"/>
+        <Entry x:Name="name" FontSize="20" Placeholder="Имя" Keyboard="Text" TextChanged="nC"/>
+        <Entry x:Name="lastName" FontSize="20" Placeholder="Фамилия" Keyboard="Text" TextChanged="lnC"/>
+        <Button x:Name="OK" FontSize="20" Text="OK" VerticalOptions="EndAndExpand" IsEnabled="False" Clicked="okClick"/>
+    </StackLayout>
+</ContentPage>

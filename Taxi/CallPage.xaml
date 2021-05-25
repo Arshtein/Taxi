@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Taxi"
+             x:Class="Taxi.CallPage">
+    <StackLayout>
+        <Label x:Name="uInfo" FontSize="20"/>
+        <Button x:Name="setPath" FontSize="20" Text="Задать путь" Clicked="setPathClick"/>
+        <Label x:Name="pInfo" FontSize="20"/>
+        <Button x:Name="call" FontSize="20" Text="Вызвать машину" VerticalOptions="EndAndExpand" Clicked="callClick" IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>
